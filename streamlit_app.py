@@ -76,4 +76,5 @@ if streamlit.button ('Add Fruit'):
    my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
    insert_fruit = insert_row_snowflake (add_my_fruit)
    my_cnx.close()
+   streamlit.text(insert_fruit)
 
